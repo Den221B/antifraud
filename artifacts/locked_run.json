@@ -1,0 +1,194 @@
+{
+  "output": "submission_best_solution.csv",
+  "base_submission": "base_submission_segmented.csv",
+  "base_level": "segmented",
+  "models": {
+    "vblock_dynamics": "vblock_dynamics_final.txt",
+    "vblock_structured": "vblock_structured_final.txt"
+  },
+  "weights": {
+    "vblock_cold": 0.11249999999999999,
+    "structured_cold": 0.025
+  },
+  "segments": {
+    "strict": 43453,
+    "partial": 15763,
+    "cold": 70520
+  },
+  "features": {
+    "vblock": 712,
+    "structured": 1046
+  },
+  "feature_stats": {
+    "base": 542,
+    "target_free_profile": 78,
+    "advanced": 75,
+    "dynamics": 310,
+    "vblock": {
+      "v_blocks": 11,
+      "block_features": 110,
+      "c_columns": 14,
+      "d_columns": 15,
+      "selected_v_columns": [
+        "V242",
+        "V243",
+        "V258",
+        "V265",
+        "V199",
+        "V201",
+        "V257",
+        "V274",
+        "V86",
+        "V156",
+        "V44",
+        "V87",
+        "V62",
+        "V217",
+        "V91",
+        "V67",
+        "V275",
+        "V189",
+        "V212",
+        "V70",
+        "V61",
+        "V69",
+        "V45",
+        "V149",
+        "V256",
+        "V90",
+        "V266",
+        "V94",
+        "V308",
+        "V200"
+      ],
+      "aggregate_features": 264,
+      "missing_profile_features": 22,
+      "total_features": 396
+    },
+    "calendar_amount": {
+      "features": 139,
+      "amount_group_keys": 6,
+      "start_date": "2017-12-01"
+    },
+    "identity": {
+      "features": 25
+    },
+    "behavior": {
+      "features": 170,
+      "behavior_columns": [
+        "ProductCD",
+        "card2",
+        "card5",
+        "addr1",
+        "P_emaildomain",
+        "R_emaildomain",
+        "DeviceInfo",
+        "id_30",
+        "id_31",
+        "id_33"
+      ],
+      "cooccurrence_pairs": [
+        [
+          "card1",
+          "addr1"
+        ],
+        [
+          "card1",
+          "P_emaildomain"
+        ],
+        [
+          "card1",
+          "DeviceInfo"
+        ],
+        [
+          "P_emaildomain",
+          "DeviceInfo"
+        ],
+        [
+          "id_30",
+          "id_31"
+        ],
+        [
+          "card4",
+          "card6"
+        ]
+      ]
+    },
+    "graph": {
+      "rows": 495101,
+      "components": 137510,
+      "singleton_components": 68069,
+      "multirow_components": 69441,
+      "rows_in_multirow_components": 427032,
+      "max_component_size": 372,
+      "keys": [
+        {
+          "key": "card_addr_origin",
+          "valid_rows": 441282,
+          "linked_groups": 73386,
+          "oversized_groups": 2,
+          "union_edges": 261718
+        },
+        {
+          "key": "card_origin_email",
+          "valid_rows": 413304,
+          "linked_groups": 69796,
+          "oversized_groups": 2,
+          "union_edges": 62713
+        },
+        {
+          "key": "card_full_origin",
+          "valid_rows": 484462,
+          "linked_groups": 68949,
+          "oversized_groups": 23,
+          "union_edges": 33156
+        },
+        {
+          "key": "card_addr_origin_device",
+          "valid_rows": 71637,
+          "linked_groups": 9335,
+          "oversized_groups": 1,
+          "union_edges": 4
+        }
+      ],
+      "profile_features": 78,
+      "causal_history_features": 7,
+      "history_smoothing": 20.0,
+      "train_target_rate": 0.033766233766233764
+    },
+    "advanced_graph": {
+      "rows": 495101,
+      "components": 131759,
+      "singleton_components": 65959,
+      "rows_in_multirow_components": 429142,
+      "max_component_size": 500,
+      "exact_keys": {
+        "card_addr_origin": {
+          "valid_rows": 441282,
+          "linked_groups": 73386,
+          "oversized_groups": 2,
+          "union_edges": 261718
+        },
+        "card_origin_clean_email": {
+          "valid_rows": 462453,
+          "linked_groups": 77317,
+          "oversized_groups": 8,
+          "union_edges": 63615
+        },
+        "card_full_origin": {
+          "valid_rows": 484462,
+          "linked_groups": 68949,
+          "oversized_groups": 23,
+          "union_edges": 32162
+        }
+      },
+      "fuzzy_d3_candidates": 100712,
+      "fuzzy_d3_union_edges": 5847,
+      "fuzzy_d3_rejected_or_existing": 94865
+    }
+  },
+  "selection": "weights locked by train-only temporal validation",
+  "reads_external_audit_labels": false,
+  "rows": 129736,
+  "elapsed_minutes": 2.2846282680829364
+}

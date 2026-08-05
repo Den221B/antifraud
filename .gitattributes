@@ -1,0 +1,7 @@
+# Данные и эталоны — побайтово как есть, git не трогает переводы строк
+*.csv binary
+*.npy binary
+
+# Код — нормализуем в LF
+*.py text eol=lf
+*.txt text eol=lf

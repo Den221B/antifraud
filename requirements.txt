@@ -1,0 +1,12 @@
+# Ветка locked_replay (§8) — признаки и две residual-модели
+lightgbm==4.7.0
+numpy==2.5.1
+pandas==2.3.3
+scikit-learn==1.9.0
+matplotlib==3.11.1
+
+# Дополнительно для ветки end2end (§7): полный стек src/end2end/
+# На Kaggle все они предустановлены. Версии ниже — те, на которых стек валидировался.
+catboost==1.2.8
+xgboost==3.3.0
+torch==2.6.0
