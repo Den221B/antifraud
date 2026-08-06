@@ -145,7 +145,7 @@ def main() -> None:
         print(json.dumps(row, indent=2), flush=True)
 
     report = {
-        "data_policy": "official train/test only; no gap/test labels",
+        "data_policy": "official train/test only",
         "folds_requested": list(args.folds),
         "base_features": len(features) - len(mean_features),
         "user_mean_features": mean_features,

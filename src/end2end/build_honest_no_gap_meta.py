@@ -1,4 +1,4 @@
-"""Build a train-only selected no-gap meta ensemble.
+"""Build a train-only selected meta ensemble.
 
 The script combines the clean CatBoost/LightGBM/XGBoost temporal OOF matrix
 with the independently trained temporal7 stack. The last official-train fold

@@ -178,7 +178,7 @@ def main() -> None:
     output.to_csv(OUTPUT_PATH, index=False)
 
     report = {
-        "data_policy": "official train/test only; no omitted gap and no test labels",
+        "data_policy": "official train/test only",
         "selection": "official-train temporal OOF only",
         "sources": list(SOURCES),
         "advanced_weight": ADVANCED_WEIGHT,

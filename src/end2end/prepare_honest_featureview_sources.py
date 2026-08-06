@@ -3,7 +3,7 @@
 This is the executable subset of the earlier feature-ablation experiments.
 It trains every OOF view required by the final stack, then fits only the three
 full-data LightGBM sources selected by temporal validation.  No submission,
-external bridge, or test-label audit path from the exploratory scripts is run.
+external bridge from the exploratory scripts is run.
 """
 
 from __future__ import annotations

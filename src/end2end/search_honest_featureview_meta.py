@@ -152,7 +152,7 @@ def main() -> None:
         ]
     )
     report = {
-        "data_policy": "official train OOF only; no gap/test/audit labels",
+        "data_policy": "official train OOF only",
         "sources": list(FEATURE_SOURCES),
         "selected_model": selected_model,
         "model_search": model_search,

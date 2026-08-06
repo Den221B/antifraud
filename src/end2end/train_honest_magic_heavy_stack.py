@@ -824,7 +824,7 @@ def main() -> None:
     report = {
         "data_policy": (
             "official train/test covariates; official train labels only; "
-            "no gap or audit labels"
+            "official train labels only"
         ),
         "official_hashes": manifest["official_hashes"],
         "feature_recipe": manifest["source"],

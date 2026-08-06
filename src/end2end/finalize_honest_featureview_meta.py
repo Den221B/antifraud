@@ -163,7 +163,7 @@ def main() -> None:
     output.to_csv(OUTPUT_PATH, index=False)
 
     report = {
-        "data_policy": "official train/test only; no gap/test/audit labels",
+        "data_policy": "official train/test only",
         "selection_report": str(WORK_DIR / "search_report.json"),
         "selected_sources": list(selected_sources),
         "clean_feature_sources": needed_feature_sources,

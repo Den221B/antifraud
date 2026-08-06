@@ -188,7 +188,6 @@
     }
   },
   "selection": "weights locked by train-only temporal validation",
-  "reads_external_audit_labels": false,
   "rows": 129736,
   "elapsed_minutes": 2.2846282680829364
 }

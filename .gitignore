@@ -24,6 +24,18 @@ models/**/*.joblib
 _local/
 _cache/
 
-# Ноутбуки и тексты заливаются отдельно, после ручной валидации
-*.ipynb
+# Тексты: в репозиторий идут README рядом с кодом, черновики — нет
 *.md
+!README.md
+!notebooks/README.md
+!models/byte2byte/README.md
+!models/end2end/README.md
+
+# Ноутбуки: в репозиторий идут только два готовых из notebooks/,
+# рабочие копии и черновики в корне — нет
+*.ipynb
+!notebooks/antifraud_solution.ipynb
+!notebooks/e2e_solution.ipynb
+
+# Архив весов финального слоя (7.4 МБ) — распакован в _local/
+Weights.tar.gz

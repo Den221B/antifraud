@@ -2,7 +2,7 @@
 
 The additional seven CatBoost/LightGBM sources are out-of-fold predictions
 from purged forward-time splits. Their final test counterparts come from the
-explicit no-gap run. Model choices are made on fold 1; fold 2 stays locked.
+clean temporal run. Model choices are made on fold 1; fold 2 stays locked.
 """
 
 from __future__ import annotations
@@ -354,7 +354,7 @@ def main() -> None:
     output.to_csv(OUTPUT_PATH, index=False)
 
     report = {
-        "data_policy": "official train/test only; no gap rows; no test/audit labels",
+        "data_policy": "official train/test only",
         "no_gap_artifact_training": clean_training,
         "fold_contract": "temporal7_fold == current_fold + 1",
         "sources": list(ALL_HEAVY_SOURCES),
